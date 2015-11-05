@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -18,6 +17,7 @@ public class PuissanceFun
         int longueur = Integer.parseInt(rep.readLine());
 
         new Plateau(largeur,longueur);
+        Plateau.plateau = new char[Plateau.largeur][Plateau.longueur];
 
     }
 

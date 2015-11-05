@@ -5,9 +5,10 @@ public class Plateau
 {
 
 	//attributs
-	private int longueur;
-	private int largeur;
-	private char[][] plateau;
+	public static int longueur;
+	public static int largeur;
+	public static char[][] plateau;
+
 	//constructeurs
 	public Plateau(int largeur, int longeur)
 	{
