@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 public class Plateau
 {
 
@@ -14,6 +11,9 @@ public class Plateau
 	{
 		this.largeur = largeur;
 		this.longueur = longeur;
+		initialisation();
+		affichage();
+
 
 	}
 
@@ -27,6 +27,7 @@ public class Plateau
 
 
 	public void initialisation(){
+		plateau = new char[largeur][longueur];
 		for(int i=0; i<largeur; i++){
 			for(int j=0; j<longueur; j++){
 				plateau[i][j]=' ';
@@ -34,23 +35,34 @@ public class Plateau
 		}
 	}
 
-	public void affichage()
+	public static void affichage()
 	{
 		int l=0;
-		while(l<=longueur){
+		System.out.println();
+		while(l<=2*longueur){
 			System.out.print('_');
+			l++;
 		}
+		System.out.println();
+
 
 		for(int i=0; i<largeur;i++)
 		{
-			System.out.println('|');
+
 			for(int j=0; j<longueur;j++)
 			{
 				System.out.print('|');
 				System.out.print(plateau[i][j]);
 
 			}
+			 System.out.println('|');
 		}
+		l=0;
+		while(l<=2*longueur){
+			System.out.print('_');
+			l++;
+		}
+		System.out.println();
 	}
 
 }//fin Plateau
