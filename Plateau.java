@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -6,29 +5,28 @@ public class Plateau
 {
 
 	//attributs
-	private int longeur;
+	private int longueur;
 	private int largeur;
-	private Pions[][] plateau;
+	private char[][] plateau;
 	//constructeurs
 	public Plateau(int largeur, int longeur)
 	{
 		this.largeur = largeur;
-		this.longeur = longeur;
+		this.longueur = longeur;
 
 	}
 
 	public Plateau()
 	{
 		this.largeur = 5;
-		this.longeur = 5;
+		this.longueur = 5;
 	}
 
 	//methodes
-	plateau = new char[largeur][longueur];
+
 
 	public void initialisation(){
-	plateau = new Pions[largeur][longueur];
-		for( int i=0; i<largeur; i++){
+		for(int i=0; i<largeur; i++){
 			for(int j=0; j<longueur; j++){
 				plateau[i][j]=' ';
 			}
@@ -54,5 +52,4 @@ public class Plateau
 		}
 	}
 
-    }//fin Plateau
-
+}//fin Plateau
