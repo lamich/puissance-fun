@@ -1,9 +1,9 @@
+
 import java.io.*;
 import java.util.*;
 
 public class PuissanceFun
 {
-
     public static void main (String[] args) throws Exception
     {
 
@@ -16,8 +16,9 @@ public class PuissanceFun
         System.out.println("Saisir une longueur: ");
         int longueur = Integer.parseInt(rep.readLine());
 
+
+
         new Plateau(largeur,longueur);
-        Plateau.plateau = new char[Plateau.largeur][Plateau.longueur];
 
     }
 
